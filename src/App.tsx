@@ -1,7 +1,14 @@
-import React from "react";
+import { RecoilRoot } from "recoil";
+import Router from "./Routes/Router";
+import { GlobalStyle } from "./Styles/GlobalStyle";
 
-function App() {
-  return <div className="App"></div>;
-}
+const App = () => {
+  return (
+    <RecoilRoot>
+      <GlobalStyle />
+      <Router />
+    </RecoilRoot>
+  );
+};
 
 export default App;
